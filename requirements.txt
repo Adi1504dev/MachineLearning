@@ -5,3 +5,7 @@ pyspark
 matplotlib
 seaborn
 scipy
+lxml
+html5lib
+beautifulsoup4
+openpyxl
