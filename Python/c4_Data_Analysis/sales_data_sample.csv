@@ -1,0 +1,11 @@
+Order ID,Date,Customer Name,Product,Category,Quantity,Unit Price,Total
+1001,2025-06-01,Anita Sharma,Apple iPhone 14,Electronics,1,79900,79900
+1002,2025-06-01,Raj Malhotra,Noise Smartwatch,Fashion,2,2999,5998
+1003,2025-06-02,Seema Yadav,Levi's Jeans,Clothing,1,2999,2999
+1004,2025-06-02,Vikram Singh,Dell Laptop,Electronics,1,58999,58999
+1005,2025-06-03,Preeti Mehra,Lakme Lipstick,Beauty,3,450,1350
+1006,2025-06-03,Suresh Kumar,Nike Running Shoes,Footwear,2,5999,11998
+1007,2025-06-04,Kavita Joshi,Wooden Dining Table,Furniture,1,24999,24999
+1008,2025-06-04,Amit Patel,HP Printer,Electronics,1,7499,7499
+1009,2025-06-05,Ritika Gupta,Boat Bluetooth Speaker,Electronics,2,1999,3998
+1010,2025-06-05,Anil Kapoor,Puma T-Shirt,Clothing,4,899,3596
