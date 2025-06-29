@@ -1,7 +1,0 @@
-This is a new line.
-This is another line.
-This line is appended.
-This is another appended line.
-Line 1
-Line 2
-Line 3
