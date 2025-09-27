@@ -1,2 +1,3 @@
-python3env/*
+venv/
 *.pyc
+.vscode/
