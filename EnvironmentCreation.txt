@@ -1,6 +1,6 @@
 code --> from directory opens visual studio in that path
 
-conda create -p python3env python==3.10 
-conda activate .\python3env\
+conda create -p venv python==3.10 
+conda activate .\venv\
 pip install -r .\requirements.txt     
  
