@@ -4,7 +4,7 @@ Runs multiple threads (lightweight subprocesses) within a single process.
 
 Threads share memory.
 
-In CPython, threads are limited by the GIL (Global Interpreter Lock) — only one thread executes Python bytecode at a time.
+In Python, threads are limited by the GIL (Global Interpreter Lock) — only one thread executes Python bytecode at a time.
 
 Best for I/O-bound tasks (e.g., web scraping, file reading, network calls).
 
