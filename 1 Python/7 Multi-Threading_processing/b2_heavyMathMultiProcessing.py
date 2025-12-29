@@ -14,7 +14,7 @@ numbers = [5000,40000,2000,433,4223,32345,3223,54353,23234,23432,3,2312,3443,234
 
 time1 = datetime.now()
 if __name__=="__main__":
-    with ProcessPoolExecutor(max_workers=1) as ex: # Change workers to see differance in runtime 03.881174 sec in 1 , 1.73 sec in 3
+    with ProcessPoolExecutor(max_workers=4) as ex: # Change workers to see differance in runtime 03.881174 sec in 1 , 1.73 sec in 3
         futures = [ex.submit(num_fact,num) for num in numbers]
     for f in as_completed(futures):
         print(f.result())
