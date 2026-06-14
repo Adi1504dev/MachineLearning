@@ -1,0 +1,21 @@
+services:
+
+  postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_DB: testdb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+
+  redis:
+    image: redis:7
+
+  app:
+    build: .
+
+    ports:
+      - "5000:5000"
+
+    depends_on:
+      - postgres
+      - redis

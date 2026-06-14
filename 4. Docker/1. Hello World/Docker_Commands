@@ -19,11 +19,28 @@
   30 docker run 96498ffd522e
   31 docker ps
 
-  
+
 ---Building docker image----
 cd '.\4. Docker\Hello World\'                                                                                                                              
 docker build -t welcome-app .   ---> to build image with name welcome-app                                                                                                                           
 docker images                ---> to see images                                                                                                                              
 docker run -p 5001:5000 welcome-app    ---> to run image and map port 5001 local --->5000 to container in container code was running on 5000                                                                                                                             
 docker ps ---> to see running containers
-docker stop <container id>   to stop container     
+docker stop <container id>   to stop container 
+
+
+
+to login
+docker login -u <username>
+
+to push create name with user name
+docker build -t adi1504/welcome-app .
+
+to rename
+docker tag adi1504/welcome-app adi1504/welcome-app1
+
+to build with version 
+docker build -t myapp:1.0 .
+
+to push
+docker push adi1504/welcome-app:latest
