@@ -1,0 +1,29 @@
+
+ -- -----------
+   1 docker
+   2 docker --version
+   3 docker pull docker/getting-started --->pulling image from hub
+   4 docker images
+   5 docker run -d -p 80:80 docker/getting-started
+   7 docker ps
+   8 docker stop 510667b4b169
+  16 docker images
+  18 docker image rm d79336f4812b
+  20 docker image rm -f d79336f4812b
+  21 docker pull hello-world
+  22 docker images
+  23 docker image rm -f 96498ffd522e
+  27 docker ps
+  28 docker run -d -p 81:81 hello-world:nanoserver-ltsc2025
+  29 docker images
+  30 docker run 96498ffd522e
+  31 docker ps
+
+  
+---Building docker image----
+cd '.\4. Docker\Hello World\'                                                                                                                              
+docker build -t welcome-app .   ---> to build image with name welcome-app                                                                                                                           
+docker images                ---> to see images                                                                                                                              
+docker run -p 5001:5000 welcome-app    ---> to run image and map port 5001 local --->5000 to container in container code was running on 5000                                                                                                                             
+docker ps ---> to see running containers
+docker stop <container id>   to stop container     
