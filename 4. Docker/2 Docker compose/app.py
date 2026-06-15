@@ -14,6 +14,7 @@ time.sleep(5)
 # PostgreSQL connection
 
 conn = psycopg2.connect(
+    #service name(in docker container) becomes host name
     host="postgres",
     database="testdb",
     user="postgres",
@@ -32,6 +33,16 @@ CREATE TABLE IF NOT EXISTS employee(
 conn.commit()
 
 # Redis connection
+# Docker Compose creates an internal network where each service name
+# becomes a hostname. The Redis container is reachable using host="redis".
+#
+# Note that container-to-container communication uses Redis's internal
+# listening port (6379 by default), not the host-mapped port defined
+# in docker-compose.yml. Port mappings such as "6379:6379" are only
+# required when accessing Redis from outside Docker (e.g., from the host machine).
+#
+# If Redis is reconfigured to listen on a different internal port,
+# the port specified below must match that internal container port.
 
 redis_client = redis.Redis(
     host="redis",
