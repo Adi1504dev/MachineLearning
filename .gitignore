@@ -1,7 +1,6 @@
 venv/
+mlvenv/
+python3env/
+
 *.pyc
 .vscode/
-python3env/
-mlvevn/*
-mlvevn/*
-mlvevn
