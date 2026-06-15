@@ -1,5 +1,8 @@
 code --> from directory opens visual studio in that path
 
-conda create -p venv python==3.10 
-conda activate .\venv\
-pip install -r .\requirements.txt     
+conda create -p mlvenv python==3.10 
+conda activate .\mlvenv\
+pip install -r .\requirements.txt  
+if activation fails to happen
+ C:\Users\hp\MachineLearning\mlvenv\python.exe -m pip install -r .\requirements.txt
+   
