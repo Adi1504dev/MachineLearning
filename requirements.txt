@@ -18,3 +18,4 @@ spacy
 tensorflow==2.15.0
 streamlit
 tensorboard
+scikeras
